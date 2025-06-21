@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <title>Logisti</title>
+  <base href=".">
+  <meta name="viewport" content="width=device-width, initial-scale=1-0">
+  <link rel="icon" type="image/x-icon" href="https://naql.logisti.sa/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <style>
+    /*
+    Importing Cairo font from Google Fonts.
+    This is placed here to ensure the font is available,
+    as inline styles do not support @font-face rules directly within elements.
+  */
+  @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+
+  /*
+    Basic responsive adjustments for the main content area.
+    Modified to allow full width display.
+  */
+  @media (min-width: 1008px) {
+    body > div {
+      
+      max-width: 100%; /* Allow content to use full available width */
+      padding: 20px;
+    }
+    .responsive-flex > div {
+      flex: 1 1 30%; /* Original setting for multi-column on wider screens */
+      box-sizing: border-box; /* Ensure padding is included in the width */
+      padding: 10px; /* Add some padding for spacing */
+    }
+  }
+
+  /*
+    Adjustments for smaller screens (767px or narrower).
+    Elements will stack vertically, taking full width.
+  */
+  @media (max-width: 767px) {
+    body > div {
+      margin: 0; /* Remove margin for full width on small screens */
+      padding: 10px; /* Adjust padding for smaller screens */
+    }
+    .responsive-flex > div {
+      width: 100%; /* Ensure elements take full width */
+      box-sizing: border-box;
+      padding: 10px;
+    }
+  }
+
+  /* General styles (if any, ensure they are compatible with the above) */
+  body {
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Example background */
+  }
+
+  /* Ensure the main container has some padding */
+  .container {
+    padding: 20px;
+  }
+    /*
+      Importing Cairo font from Google Fonts.
+      This is placed here to ensure the font is available,
+      as inline styles do not support @font-face rules directly within elements.
+    */
+    @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+
+    /*
+      Basic responsive adjustments for the main content area.
+      Using a media query to adjust margins for larger screens.
+    */
+    @media (min-width: 768px) {
+      body > div {
+        margin: 20px auto; /* Center content on wider screens */
+        max-width: 900px; /* Limit content width */
+        padding: 20px;
+      }
+      .responsive-flex > div {
+        flex: 0 0 auto;
+        width: 30%; /* Adjust width for 3 columns on larger screens */
+        margin-right: 20px; /* Spacing between columns */
+        margin-bottom: 20px; /* Spacing below rows */
+      }
+      .responsive-flex > div:nth-child(3n) {
+        margin-right: 0; /* No right margin for the last column in a row */
+      }
+    }
+    @media (max-width: 767px) {
+      .responsive-flex > div {
+        width: 100%; /* Full width on smaller screens */
+        margin-right: 0;
+        margin-bottom: 10px; /* Spacing below items */
+      }
+    }
+  </style>
+</head>
+
+<body style="min-height: 100vh; overflow-x: hidden; background: #f8f9f9 no-repeat bottom left; background-color: #f8f9f9 !important; background-size: 35%; margin: 0; padding-top: 68px; padding-bottom: 125px; font-family: 'Cairo', sans-serif; line-height: 1.5; font-weight: 400; font-size: 16px; color: #212529; text-align: right;">
+  <div style="margin: 10px; padding: 10px; box-sizing: border-box;">
+    <header style="margin-bottom: 20px;">
+      <div style="display: flex; align-items: center;; flex-wrap: wrap;">
+        <div style="flex: 1 1 100%;">
+          <p style="color: #0d6efd; font-size: 24px; font-weight: 600; margin-bottom: 15px;">
+            تفاصيل بطاقة التشغيل</p>
+        </div>
+      </div>
+    </header>
+    <div style="background-color: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);">
+      <div style="padding: 10px 0;">
+        <p style="font-size: 20px; font-weight: 600; color: #0d6efd; margin-top: 0; margin-bottom: 20px;">
+          بيانات المنشأة/الفرد</p>
+        <div class="responsive-flex" style="display: flex; justify-content: flex-start; flex-wrap: wrap;">
+          <div style="flex: 1 1 auto; min-width: 250px;">
+            <p style="font-size: 14px; color: #6c757d; padding-top: 5px; margin-top: 0; margin-bottom: 5px;">الاسم
+            </p>
+            <p style="font-size: 16px; font-weight: bold; margin-bottom: 15px;"> شركة عروبه للخدمات اللوجستية شركة شخص واحد</p>
+          </div>
+        </div>
+        <div style="padding: 10px 0;">
+          <hr style="border: none; border-top: 1px solid #e0e0e0; margin: 20px 0;">
+        </div>
+        <p style="font-size: 20px; font-weight: 600; color: #0d6efd; margin-top: 0; margin-bottom: 20px;">
+          معلومات الترخيص الرئيسي</p>
+        <div class="responsive-flex" style="display: flex; justify-content: flex-start; flex-wrap: wrap;">
+          <div style="flex: 1 1 auto; min-width: 250px;">
+            <p style="font-size: 14px; color: #6c757d; padding-bottom: 5px; margin-top: 0; margin-bottom: 5px;">رقم
+              الترخيص</p>
+            <p style="font-size: 16px; font-weight: bold; margin-bottom: 15px;"> 38/00005861</p>
+          </div>
+          <div style="flex: 1 1 auto; min-width: 250px;">
+            <p style="font-size: 14px; color: #6c757d; padding-bottom: 5px; margin-top: 0; margin-bottom: 5px;">نوع
+              الترخيص/النشاط</p>
+            <p style="font-size: 16px; font-weight: bold; margin-bottom: 15px;">ﺍﻟﺪﺭﺍﺟﺎﺕ ﺍﻵﻟﻴﺔ ﻟﻨﻘﻞ ﺍﻟﺒﻀﺎﺋﻊ -ﺍﻟﺒﻴﺌﺔ ﺍﻟﺘﻨﻈﻴﻤﻴﺔ ﺍﻟﺘﺠﺮﻳﺒﻴﺔ
+            </p>
+          </div>
+          <div style="flex: 1 1 auto; min-width: 250px;">
+            <p style="font-size: 14px; color: #6c757d; padding-bottom: 5px; margin-top: 0; margin-bottom: 5px;">
+              المدينة</p>
+            <p style="font-size: 16px; font-weight: bold; margin-bottom: 15px;">الرياض</p>
+          </div>
+        </div>
+        <div style="padding: 10px 0;">
+          <hr style="border: none; border-top: 1px solid #e0e0e0; margin: 20px 0;">
+        </div>
+        <p style="font-size: 20px; font-weight: 600; color: #0d6efd; margin-top: 0; margin-bottom: 20px;">بيانات
+          بطاقة التشغيل</p>
+        <div class="responsive-flex" style="display: flex; justify-content: flex-start; flex-wrap: wrap;">
+          <div style="flex: 1 1 auto; min-width: 250px;">
+            <p style="font-size: 14px; color: #6c757d; padding-bottom: 5px; margin-top: 0; margin-bottom: 5px;">رقم
+              البطاقة</p>
+            <p style="font-size: 16px; font-weight: bold; margin-bottom: 15px;"> 38-00019321</p>
+          </div>
+          <div style="flex: 1 1 auto; min-width: 250px;">
+            <p style="font-size: 14px; color: #6c757d; padding-bottom: 5px; margin-top: 0; margin-bottom: 5px;">نوع
+              بطاقة التشغيل</p>
+            <p style="font-size: 16px; font-weight: bold; margin-bottom: 15px;">النقل الخفيف للبضائع على الطرق البرية
+            </p>
+          </div>
+          <div style="flex: 1 1 auto; min-width: 250px;">
+            <p style="font-size: 14px; color: #6c757d; padding-bottom: 5px; margin-top: 0; margin-bottom: 5px;">تاريخ
+              الإصدار</p>
+            <p style="font-size: 16px; font-weight: bold; margin-bottom: 15px;">1446/07/29</p>
+          </div>
+          <div style="flex: 1 1 auto; min-width: 250px;">
+            <p style="font-size: 14px; color: #6c757d; padding-bottom: 5px; margin-top: 0; margin-bottom: 5px;">تاريخ
+              الانتهاء</p>
+            <p style="font-size: 16px; font-weight: bold; margin-bottom: 15px;">1447/07/29</p>
+          </div>
+        </div>
+        <div style="padding: 10px 0;">
+          <hr style="border: none; border-top: 1px solid #e0e0e0; margin: 20px 0;">
+        </div>
+        <p style="font-size: 20px; font-weight: 600; color: #0d6efd; margin-top: 0; margin-bottom: 20px;">
+          معلومات المركبة</p>
+        <div class="responsive-flex" style="display: flex; justify-content: flex-start; flex-wrap: wrap;">
+          <div style="flex: 1 1 auto; min-width: 250px;">
+            <p style="font-size: 14px; color: #6c757d; padding-bottom: 5px; margin-top: 0; margin-bottom: 5px;">نوع
+              السيارة - الماركة و الطراز</p>
+            <p style="font-size: 16px; font-weight: bold; margin-bottom: 15px;">صني نيسان</p>
+          </div>
+          <div style="flex: 1 1 auto; min-width: 250px;">
+            <p style="font-size: 14px; color: #6c757d; padding-bottom: 5px; margin-top: 0; margin-bottom: 5px;">رقم
+              اللوحة</p>
+            <p style="font-size: 16px; font-weight: bold; margin-bottom: 15px;">أ ص ع 9105</p>
+          </div>
+          <div style="flex: 1 1 auto; min-width: 250px;">
+            <p style="font-size: 14px; color: #6c757d; padding-bottom: 5px; margin-top: 0; margin-bottom: 5px;">سنة
+              الصنع</p>
+            <p style="font-size: 16px; font-weight: bold; margin-bottom: 15px;">2024</p>
+          </div>
+          <div style="flex: 1 1 auto; min-width: 250px;">
+            <p style="font-size: 14px; color: #6c757d; padding-bottom: 5px; margin-top: 0; margin-bottom: 5px;">لون
+              المركبة</p>
+            <p style="font-size: 16px; font-weight: bold; margin-bottom: 15px;">ابيض</p>
+          </div>
+          <div style="flex: 1 1 auto; min-width: 250px;">
+            <p style="font-size: 14px; color: #6c757d; padding-bottom: 5px; margin-top: 0; margin-bottom: 5px;">الرقم
+              التسلسلي</p>
+            <p style="font-size: 16px; font-weight: bold; margin-bottom: 15px;">910684120</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="display: flex; justify-content: flex-end; margin-top: 20px;">
+      <button type="button" style="background-color: transparent; border: 1px solid #0d6efd; color: #0d6efd; padding: 10px 40px; border-radius: 4px; cursor: pointer; font-size: 16px; font-weight: 600;">رجوع</button>
+    </div>
+  </div>
+</body>
+
+</html>
